@@ -1,0 +1,30 @@
+#include "stm32f4xx.h"
+
+#define ADC1EN			(1U<<8)
+#define	GPIOAEN			(1U<<0)
+
+
+
+
+
+
+
+
+
+void PA1_adc_init(void)
+{
+	/*Enable Clock access to GPIOA*/
+	RCC->AHB1ENR |= GPIOAEN;
+	/*SET MODE TO PA1*/
+	GPIOA->MODER |= (1U<<2);
+	GPIOA->MODER |= (1U<<3);
+
+	RCC->APB2ENR |=ADC1EN;
+
+	/*CONFIG ADC PARAMETERS*/
+	/*CONFIG SEQ START*/
+
+	/*CONVERSION SEQ LENGTH*/
+	/*ENABLE ADC MODULE*/
+
+}

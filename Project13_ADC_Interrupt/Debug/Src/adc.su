@@ -1,0 +1,5 @@
+/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Src/adc.c:13:6:PA1_adc_init	4	static
+../Src/adc.c:34:6:PA1_adc_interrupt_init	8	static
+../Src/adc.c:58:6:start_conversion	4	static
+../Src/adc.c:64:10:adc_read	4	static

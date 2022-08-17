@@ -1,0 +1,2 @@
+../Src/timer.c:10:6:tim2_1Hz_init	4	static
+../Src/timer.c:24:6:tim2_PA5_output_compare	4	static

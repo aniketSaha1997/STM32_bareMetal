@@ -1,0 +1,18 @@
+10:45:17 **** Build of configuration Debug for project Project14_SYSTICK_interrupt ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/systick.o"
+arm-none-eabi-gcc -o "Project14_SYSTICK_interrupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/aniket/STM32CubeIDE/workspace_1.10.1/Project14_SYSTICK_interrupt/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project14_SYSTICK_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project14_SYSTICK_interrupt.elf
+ 
+arm-none-eabi-size   Project14_SYSTICK_interrupt.elf 
+arm-none-eabi-objdump -h -S  Project14_SYSTICK_interrupt.elf  > "Project14_SYSTICK_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5728	    108	   1588	   7424	   1d00	Project14_SYSTICK_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project14_SYSTICK_interrupt.list
+ 
+
+10:45:18 Build Finished. 0 errors, 0 warnings. (took 816ms)
+

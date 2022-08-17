@@ -1,0 +1,18 @@
+16:05:25 **** Incremental Build of configuration Debug for project Project10_GPTimer_InputCapture ****
+make -j7 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "Project10_GPTimer_InputCapture.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/aniket/STM32CubeIDE/workspace_1.10.1/Project10_GPTimer_InputCapture/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project10_GPTimer_InputCapture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project10_GPTimer_InputCapture.elf
+ 
+arm-none-eabi-size   Project10_GPTimer_InputCapture.elf 
+arm-none-eabi-objdump -h -S  Project10_GPTimer_InputCapture.elf  > "Project10_GPTimer_InputCapture.list"
+   text	   data	    bss	    dec	    hex	filename
+    964	      8	   1568	   2540	    9ec	Project10_GPTimer_InputCapture.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project10_GPTimer_InputCapture.list
+ 
+
+16:05:26 Build Finished. 0 errors, 0 warnings. (took 698ms)
+

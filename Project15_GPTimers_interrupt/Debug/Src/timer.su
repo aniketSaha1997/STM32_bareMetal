@@ -1,0 +1,3 @@
+/Users/aniket/Documents/STM32Cube_FW_F4_V1.27.0/Drivers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Src/timer.c:7:6:tim2_1Hz_init	4	static
+../Src/timer.c:21:6:tim2_1Hz_interrupt_init	8	static
